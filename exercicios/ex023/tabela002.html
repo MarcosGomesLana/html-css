@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas grandes</title>
+</head>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table{
+            width: 400;
+            border-collapse: collapse;
+            position: relative;
+        
+        }
+
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+
+    </style>
+<body>
+    <h1>Usaando tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        CAPTION
+        THEAD
+            TR. TD. TH
+        TBODY
+            TR, TD, TH
+        YFOOT
+            TR, TD, TH
+    -->
+
+    <table>
+        <caption>
+           Regiões do Brasil por população
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Região</th>
+                <th scope="col" style="width:50px;">Estimativa Populacional de 2025</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sudeste</td>
+                <td class="num">88 825 643</td>
+            </tr>
+            <tr>
+                <td>Nordeste</td>
+                <td class="num">57 244 485</td>
+            </tr>
+            <tr>
+                <td>Sul</td>
+                <td class="num">31 310 809	</td>
+            </tr>
+            <tr>
+                <td>Norte</td>
+                <td class="num">18 801 282</td>
+            </tr>
+            <tr>
+                <td>Centro-Oeste</td>
+                <td class="num">17 238 818</td>
+            </tr>
+            <tr>
+                <td>Norte</td>
+                <td class="num">18 801 282</td>
+            </tr>
+            <tr>
+                <td>Centro-Oeste</td>
+                <td class="num">17 238 818</td>
+            </tr>
+            <tr>
+                <td>Norte</td>
+                <td class="num">18 801 282</td>
+            </tr>
+            <tr>
+                <td>Centro-Oeste</td>
+                <td class="num">17 238 818</td>
+            </tr>
+            <tr>
+                <td>Norte</td>
+                <td class="num">18 801 282</td>
+            </tr>
+            <tr>
+                <td>Centro-Oeste</td>
+                <td class="num">17 238 818</td>
+            </tr>
+            <tr>
+                <td>Norte</td>
+                <td class="num">18 801 282</td>
+            </tr>
+            <tr>
+                <td>Centro-Oeste</td>
+                <td class="num">17 238 818</td>
+            </tr>
+            <tr>
+                <td>Norte</td>
+                <td class="num">18 801 282</td>
+            </tr>
+            <tr>
+                <td>Centro-Oeste</td>
+                <td class="num">17 238 818</td>
+            </tr>
+            <tr>
+                <td>Norte</td>
+                <td class="num">18 801 282</td>
+            </tr>
+            <tr>
+                <td>Centro-Oeste</td>
+                <td class="num">17 238 818</td>
+            </tr>
+
+            <tr>
+                <td>Norte</td>
+                <td class="num">18 801 282</td>
+            </tr>
+            <tr>
+                <td>Centro-Oeste</td>
+                <td class="num">17 238 818</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</td>
+                <td class="num">213 421 037	</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, molestiae quibusdam. Labore odit consequuntur, veniam asperiores sequi fuga. Sapiente ad doloribus necessitatibus amet hic optio repellat accusantium maiores ipsam! Sint.
+        Amet voluptates autem fugiat, at omnis iusto, est inventore ipsum quas dolor dignissimos officia eveniet, dicta laudantium. Molestias ex omnis quas dicta rerum ut, officiis aspernatur, ab deserunt quam laboriosam.
+        Aliquid accusantium tempora odit, minima dolorum magnam dolor assumenda earum velit repellendus consequuntur! Vitae at, officiis quae distinctio veniam, error sunt ad reprehenderit perspiciatis, mollitia voluptatibus autem corrupti corporis inventore!
+        Ab laboriosam modi est itaque quae odit earum quibusdam dolorem porro deleniti consectetur veritatis exercitationem cumque maxime aliquam nobis illo labore eveniet, ad et sit soluta quisquam. Obcaecati, nisi unde.
+        Rem, earum ad? Tenetur rem quidem porro! Ex adipisci accusamus porro asperiores vitae nobis dolore mollitia ducimus, fuga sapiente obcaecati beatae error doloremque, dignissimos provident possimus tempore, deleniti enim ad.
+    </p>
+     <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, molestiae quibusdam. Labore odit consequuntur, veniam asperiores sequi fuga. Sapiente ad doloribus necessitatibus amet hic optio repellat accusantium maiores ipsam! Sint.
+        Amet voluptates autem fugiat, at omnis iusto, est inventore ipsum quas dolor dignissimos officia eveniet, dicta laudantium. Molestias ex omnis quas dicta rerum ut, officiis aspernatur, ab deserunt quam laboriosam.
+        Aliquid accusantium tempora odit, minima dolorum magnam dolor assumenda earum velit repellendus consequuntur! Vitae at, officiis quae distinctio veniam, error sunt ad reprehenderit perspiciatis, mollitia voluptatibus autem corrupti corporis inventore!
+        Ab laboriosam modi est itaque quae odit earum quibusdam dolorem porro deleniti consectetur veritatis exercitationem cumque maxime aliquam nobis illo labore eveniet, ad et sit soluta quisquam. Obcaecati, nisi unde.
+        Rem, earum ad? Tenetur rem quidem porro! Ex adipisci accusamus porro asperiores vitae nobis dolore mollitia ducimus, fuga sapiente obcaecati beatae error doloremque, dignissimos provident possimus tempore, deleniti enim ad.
+    </p>
+     <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, molestiae quibusdam. Labore odit consequuntur, veniam asperiores sequi fuga. Sapiente ad doloribus necessitatibus amet hic optio repellat accusantium maiores ipsam! Sint.
+        Amet voluptates autem fugiat, at omnis iusto, est inventore ipsum quas dolor dignissimos officia eveniet, dicta laudantium. Molestias ex omnis quas dicta rerum ut, officiis aspernatur, ab deserunt quam laboriosam.
+        Aliquid accusantium tempora odit, minima dolorum magnam dolor assumenda earum velit repellendus consequuntur! Vitae at, officiis quae distinctio veniam, error sunt ad reprehenderit perspiciatis, mollitia voluptatibus autem corrupti corporis inventore!
+        Ab laboriosam modi est itaque quae odit earum quibusdam dolorem porro deleniti consectetur veritatis exercitationem cumque maxime aliquam nobis illo labore eveniet, ad et sit soluta quisquam. Obcaecati, nisi unde.
+        Rem, earum ad? Tenetur rem quidem porro! Ex adipisci accusamus porro asperiores vitae nobis dolore mollitia ducimus, fuga sapiente obcaecati beatae error doloremque, dignissimos provident possimus tempore, deleniti enim ad.
+    </p>
+     <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, molestiae quibusdam. Labore odit consequuntur, veniam asperiores sequi fuga. Sapiente ad doloribus necessitatibus amet hic optio repellat accusantium maiores ipsam! Sint.
+        Amet voluptates autem fugiat, at omnis iusto, est inventore ipsum quas dolor dignissimos officia eveniet, dicta laudantium. Molestias ex omnis quas dicta rerum ut, officiis aspernatur, ab deserunt quam laboriosam.
+        Aliquid accusantium tempora odit, minima dolorum magnam dolor assumenda earum velit repellendus consequuntur! Vitae at, officiis quae distinctio veniam, error sunt ad reprehenderit perspiciatis, mollitia voluptatibus autem corrupti corporis inventore!
+        Ab laboriosam modi est itaque quae odit earum quibusdam dolorem porro deleniti consectetur veritatis exercitationem cumque maxime aliquam nobis illo labore eveniet, ad et sit soluta quisquam. Obcaecati, nisi unde.
+        Rem, earum ad? Tenetur rem quidem porro! Ex adipisci accusamus porro asperiores vitae nobis dolore mollitia ducimus, fuga sapiente obcaecati beatae error doloremque, dignissimos provident possimus tempore, deleniti enim ad.
+    </p>
+    
+    
+</body>
+</html>

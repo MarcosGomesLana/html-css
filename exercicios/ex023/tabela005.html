@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabela</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        col#red{
+            
+            background-color: red;
+            
+        }
+
+        col.gray{
+            background-color: gray;
+
+        }
+
+        col#blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col id="red">
+            <col class="gray" span="2">
+           
+            <col id="blue">
+        </colgroup>
+        <caption>
+            Cadastro
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Profissão</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Nome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Desenvolvedor</td>
+                <td>M</td>
+                <td>20</td>
+                <td>Marcos</td>
+            </tr>
+            <tr>
+                <td>Professor</td>
+                <td>M</td>
+                <td>35</td>
+                <td>Gustavo</td>
+            </tr>
+            <tr>
+                <td>Limpeza</td>
+                <td>F</td>
+                <td>26</td>
+                <td>Maria</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
