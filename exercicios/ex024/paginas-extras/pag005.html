@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(225, 202, 202);
+            color: black;
+        }
+        a{
+            COLOR: BLACK;
+        }
+    </style>
+</head>
+<body>
+    <a href="#"  onclick="clicou()">Clique aqui</a>
+    <div id="clique"></div>
+
+    <script>
+        function clicou(){
+            clique = document.getElementById('clique');
+            clique.innerHTML += 'Aqui Estou!! <br>'
+        }
+    </script>
+    
+</body>
+</html>
