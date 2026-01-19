@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Iframe</title>
+
+    <style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    ul a{
+        color: rgb(27, 17, 232);
+        text-decoration: none;
+    }
+
+    ul a:hover{
+        text-decoration: underline;
+    }
+
+    iframe#tela{
+        width: 80vh;
+        height: 400px;
+        padding: 10px;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Faça sua escolha</h1>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis numquam recusandae obcaecati rerum nemo corrupti odio officiis ab velit eum molestiae nihil, enim iste vel exercitationem excepturi quos? Labore, iste.
+    </p>
+
+    <ul>
+        <li><a target="frame" href="paginas-extras/pag001.html">Primeira página</a></li>
+        <li><a target="frame" href="paginas-extras/pag002.html">Segunda página</a></li>
+        <li><a  target="frame" href="paginas-extras/pag003.html">Terceira Página</a></li>
+    </ul>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis numquam recusandae obcaecati rerum nemo corrupti odio officiis ab velit eum molestiae nihil, enim iste vel exercitationem excepturi quos? Labore, iste.
+    </p>
+
+    <iframe id="tela" name="frame" srcdoc="
+    <h1>Escolha a opção</h1>
+    <h5>Curso de HTML5 e CSS3</h5>
+    <img width='200px' src='imagens/gustavoguanabara-quadrado.png'>
+    " src="" frameborder="1">
+        <p>Erro, navegador não compativel.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis obcaecati accusantium expedita, delectus reprehenderit quisquam molestiae ea praesentium officia exercitationem distinctio. Minus molestias voluptate consequuntur rerum quos dicta assumenda voluptates.</p>
+
+    
+    
+</body>
+</html>
