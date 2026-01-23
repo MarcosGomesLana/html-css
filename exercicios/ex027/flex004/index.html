@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+
+    <style>
+        div.container-flex-start {
+            display: flex;
+            justify-content: flex-start;
+            background-color: salmon;
+        }
+
+        div.container-flex-end {
+            display: flex;
+            justify-content: flex-end;
+            background-color: salmon;
+
+        }
+
+        div.container-center {
+            display: flex;
+            justify-content: center;
+            background-color: salmon;
+
+        }
+
+        div.container-space-between {
+            display: flex;
+            justify-content: space-between;
+            background-color: salmon;
+        }
+
+        div.container-space-evenly {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: salmon;
+        }
+
+        div.container-space-around {
+            display: flex;
+            justify-content: space-around;
+            background-color: salmon;
+        }
+
+        div.items {
+
+            background-color: aqua;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        div.container-cross-axis{
+            background-color: rgb(0, 255, 110);
+            height: 300px;
+           
+        }
+
+        div#container-stretch{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: stretch;
+        }
+
+        div#container-flex-start{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: flex-start;
+        }
+
+        div#container-flex-end{
+            display: flex;
+            align-items: flex-end;
+        }
+
+        div#container-center{
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-flex-start">
+        <div class="items">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+
+    </div>
+    <br>
+    <div class="container-flex-end">
+        <div class="items">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+
+    </div>
+    <br>
+    <div class="container-center">
+        <div class="items">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+
+    </div>
+    <br>
+    <div class="container-space-between">
+        <div class="items">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+
+    </div>
+    <br>
+    <div class="container-space-evenly">
+        <div class="items">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+
+    </div>
+    <br>
+
+    <div class="container-space-around">
+        <div class="items">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+
+    </div>
+    <br>
+
+    <!-- ALIGN-ITEMS -->
+    <div id="container-stretch"   class="container-cross-axis">
+        <div class="items">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+
+    </div>
+    <br>
+    <div id="container-flex-start"  class="container-cross-axis">
+        <div class="items">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+
+    </div>
+    <br>
+
+    <div id="container-flex-end"   class="container-cross-axis">
+        <div class="items">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+
+    </div>
+    <br>
+
+    <div id="container-center"  class="container-cross-axis">
+        <div class="items">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+
+    </div>
+    <br>
+
+</body>
+
+</html>
