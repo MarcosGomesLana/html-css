@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+
+    <style>
+        div.container{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            background-color: salmon;
+            height: 200px ;
+        }
+        
+        div.items{
+            flex-basis: 100px;
+            background-color: aqua;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        div#fx-b-4{
+            flex-basis: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">A é um conteúdo muito bom de ser ler</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+        <div class="items" id="fx-b-4">D</div>
+        <div class="items">E</div>
+        <div class="items">F</div>
+        <div class="items">Galo doido, vira o ano</div>
+    </div>
+    
+</body>
+</html>
