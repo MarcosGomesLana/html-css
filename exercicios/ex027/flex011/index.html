@@ -13,13 +13,29 @@
         }
         
         div.items{
-            flex-basis: 300px;
+            flex-basis: 150px;
             flex-shrink: 1;
-            flex-grow: 1;
+            flex-grow: 0;
             background-color: aqua;
             border: 1px solid black;
             text-align: center;
             padding: 10px;
+        }
+
+        div#cxA{
+            flex-shrink: 2;
+            flex-grow: 0;
+        }
+
+        div#cxB{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        div#cxC{
+            flex-shrink: 0;
+            flex-grow: 5;
+
         }
     </style>
 </head>
